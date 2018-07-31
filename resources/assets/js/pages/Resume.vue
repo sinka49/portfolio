@@ -1,4 +1,5 @@
 <template>
+
 	<div>
 		<section>
 			<h2 class="title">Tech I use</h2>

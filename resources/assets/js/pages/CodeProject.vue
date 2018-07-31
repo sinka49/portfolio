@@ -2,7 +2,7 @@
     <div id="CodeProject">
         <div class="desc-block">
             <h2 class="header">{{ name }}</h2>
-            <p class="desc-text body" v-html="desc"></p>
+            <p class="desc-text body" v-html="description"></p>
             <h3 class="tech-title" >Technologies</h3>
             <div class="tech-chips">
               <tech-chip v-for="t in technologies" :key="t" :text="t"></tech-chip>
@@ -30,11 +30,12 @@ import IconButton from "../ui/IconButton.vue";
 import PlayStoreBadge from "../ui/PlayStoreBadge.vue";
 import Flickity from "../../../../node_modules/flickity-imagesloaded/flickity-imagesloaded";
 
+
 export default {
   name: "CodeProject",
   props: {
     name: String,
-    desc: String,
+      description: String,
     technologies: Array,
     githubLink: String,
     playStoreLink: String,

@@ -169,6 +169,7 @@ $mq-desktop				: 1382px !default;
 		display: flex;
 		flex-direction: row;
 		padding-bottom: 45px;
+		min-height: 100vh;
 	}
 
 	&.menu--active{

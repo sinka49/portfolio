@@ -3,6 +3,7 @@ require('./bootstrap');
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VeeValidate from 'vee-validate'
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 
 window.bus = new Vue()
 
@@ -15,12 +16,14 @@ Vue.directive('mousemove', require('./directives/MouseMove.vue'))
 Vue.use(VueRouter)
 Vue.use(VeeValidate)
 
+
 // Pages
 import Home from './pages/Home.vue'
 import Contact from './pages/Contact.vue'
 import Resume from './pages/Resume.vue'
 import p404 from './pages/404.vue'
 import Projects from './pages/Projects.vue'
+
 
 
 const routes = [
@@ -46,6 +49,9 @@ router.beforeEach((to, from, next) => {
 
 
 const app = new Vue({
+    components: {
+        PulseLoader
+    },
     router
 }).$mount('#app');
 
