@@ -13,9 +13,9 @@
 $api = app('Dingo\Api\Routing\Router');
 $api->version('v1', function ($api) {
     $api->get('/projects', 'App\Http\Controllers\Api\ProjectsController@index');
+    $api->post('/contact',  'App\Http\Controllers\Api\ContactFormController@sendForm');
 });
 
-//Route::post('/api/contact', 'ContactFormController@sendForm');
 
 Route::get('/{vue_capture?}', function () {
     return view('index');

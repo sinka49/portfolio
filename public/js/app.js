@@ -60164,7 +60164,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 					console.log(error);
 				});
 			}).catch(function () {
-				// eslint-disable-next-line
 				console.log('errors here');
 			});
 		}

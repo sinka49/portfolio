@@ -100,9 +100,9 @@
 					console.log(error);
 				});
 			}).catch(() => {
-	          // eslint-disable-next-line
 	          console.log('errors here')
 	      });
+
 		}
 	}
 }
